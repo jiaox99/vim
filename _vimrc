@@ -16,14 +16,14 @@ Plugin 'derekwyatt/vim-fswitch'
 Plugin 'kshenoy/vim-signature'
 Plugin 'vim-scripts/BOOKMARKS-Mark-and-Highlight-Full-Lines'
 Plugin 'majutsushi/tagbar'
-Plugin 'vim-scripts/indexer.tar.gz'
+" Plugin 'vim-scripts/indexer.tar.gz'
 Plugin 'vim-scripts/DfrankUtil'
 Plugin 'vim-scripts/vimprj'
 Plugin 'dyng/ctrlsf.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-scripts/DrawIt'
-Plugin 'SirVer/ultisnips'
+" Plugin 'SirVer/ultisnips'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'derekwyatt/vim-protodef'
 Plugin 'scrooloose/nerdtree'
@@ -140,8 +140,7 @@ set hlsearch
 " 禁止折行
 set nowrap
 
-" 设置状态栏主题风格
-let g:Powerline_colorscheme="solarized256"
+
 
 " 开启语法高亮功能
 syntax enable
@@ -163,3 +162,22 @@ set shiftwidth=4
 
 " 让 vim 把连续数量的空格视为一个制表符
 set softtabstop=4
+
+if has("gui_running")
+    set encoding=utf-8
+    set langmenu=zh_CN.UTF-8
+
+    set fileencodings=ucs_bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+
+    " 解决 console 输出乱码
+    language message zh_CN.UTF-8
+
+    " 解决菜单乱码
+    source $VIMRUNTIME/delmenu.vim
+    if has("win32")
+        source $VIMRUNTIME/mswin.vim
+    endif
+    source $VIMRUNTIME/menu.vim
+endif
+" 设置状态栏主题风格
+let g:Powerline_colorscheme='solarized256'
