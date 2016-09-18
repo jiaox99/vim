@@ -1,9 +1,9 @@
-" vundle »·¾³ÉèÖÃ
+" vundle ç¯å¢ƒè®¾ç½®
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 
-" vundle ¹ÜÀíµÄ²å¼şÁĞ±í±ØĞëÎ»ÓÚ vundle#begin() ºÍ vundle#end() Ö®¼ä
+" vundle ç®¡ç†çš„æ’ä»¶åˆ—è¡¨å¿…é¡»ä½äº vundle#begin() å’Œ vundle#end() ä¹‹é—´
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
@@ -14,7 +14,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'derekwyatt/vim-fswitch'
 Plugin 'kshenoy/vim-signature'
-Plugin 'vim-scripts/BOOKMARKS-Mark-and-Highlight-Full-Lines'
+Plugin 'vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines'
 Plugin 'majutsushi/tagbar'
 " Plugin 'vim-scripts/indexer.tar.gz'
 Plugin 'vim-scripts/DfrankUtil'
@@ -33,134 +33,134 @@ Plugin 'sjl/gundo.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'lilydjwg/fcitx.vim'
-" ²å¼şÁĞ±í½áÊø
+" æ’ä»¶åˆ—è¡¨ç»“æŸ
 call vundle#end()
 filetype plugin indent on
 
 
-" ¶¨Òå¿ì½İ¼üÇ°×º£¬¼´<Leadr>
+" å®šä¹‰å¿«æ·é”®å‰ç¼€ï¼Œå³<Leadr>
 let mapleader=";"
 
-" ¿ªÆôÎÄ¼şÀàĞÍÕì²â 
+" å¼€å¯æ–‡ä»¶ç±»å‹ä¾¦æµ‹ 
 filetype on
 
-" ¸ù¾İÕì²âµ½µÄ²»Í¬ÀàĞÍ¼ÓÔØ¶ÔÓ¦µÄ²å¼ş
+" æ ¹æ®ä¾¦æµ‹åˆ°çš„ä¸åŒç±»å‹åŠ è½½å¯¹åº”çš„æ’ä»¶
 filetype plugin on
 
-" ¶¨Òå¿ì½İ¼üµ½ĞĞÊ×ºÍĞĞÎ²
+" å®šä¹‰å¿«æ·é”®åˆ°è¡Œé¦–å’Œè¡Œå°¾
 nmap LB 0
 nmap LE $
 
-" ÉèÖÃ¿ì½İ¼ü½«Ñ¡ÖĞÎÄ±¾¿é¸´ÖÆµ½ÏµÍ³¼ôÌù°å
+" è®¾ç½®å¿«æ·é”®å°†é€‰ä¸­æ–‡æœ¬å—å¤åˆ¶åˆ°ç³»ç»Ÿå‰ªè´´æ¿
 vnoremap <Leader>y "+y
 
-" ÉèÖÃ¿ì½İ¼ü½«ÏµÍ³¼ôÌù°åÄÚÈİÕ³ÌùÖÁ vim
+" è®¾ç½®å¿«æ·é”®å°†ç³»ç»Ÿå‰ªè´´æ¿å†…å®¹ç²˜è´´è‡³ vim
 nmap <Leader>p "+p
 
-" ¶¨Òå¿ì½İ¼ü¹Ø±Õµ±Ç°·Ö¸î´°¿Ú
+" å®šä¹‰å¿«æ·é”®å…³é—­å½“å‰åˆ†å‰²çª—å£
 nmap <Leader>q :q<CR>
 
-" ¶¨Òå¿ì½İ¼ü±£´æµ±Ç°´°¿ÚÄÚÈİ
+" å®šä¹‰å¿«æ·é”®ä¿å­˜å½“å‰çª—å£å†…å®¹
 nmap <Leader>w :w<CR>
 
-" ¶¨Òå¿ì½İ¼ü±£´æËùÓĞ´°¿ÚÄÚÈİ²¢ÍË³ö vim
+" å®šä¹‰å¿«æ·é”®ä¿å­˜æ‰€æœ‰çª—å£å†…å®¹å¹¶é€€å‡º vim
 nmap <Leader>WQ :wa<CR>:q<CR>
 
-" ²»×öÈÎºÎ±£´æ£¬Ö±½ÓÍË³ö vim
+" ä¸åšä»»ä½•ä¿å­˜ï¼Œç›´æ¥é€€å‡º vim
 nmap <Leader>Q :qa!<CR>
 
-" ÒÀ´Î±éÀú×Ó´°¿Ú
+" ä¾æ¬¡éå†å­çª—å£
 nnoremap nw <C-W><C-W>
 
-" Ìø×ªÖÁÓÒ·½µÄ´°¿Ú
+" è·³è½¬è‡³å³æ–¹çš„çª—å£
 nnoremap <Leader>lw <C-W>l
 
-" Ìø×ªÖÁ×ó·½µÄ´°¿Ú
+" è·³è½¬è‡³å·¦æ–¹çš„çª—å£
 nnoremap <Leader>hw <C-W>h
 
-" Ìø×ªÖÁÉÏ·½µÄ×Ó´°¿Ú
+" è·³è½¬è‡³ä¸Šæ–¹çš„å­çª—å£
 nnoremap <Leader>kw <C-W>k
 
-" Ìø×ªÖÁÏÂ·½µÄ×Ó´°¿Ú
+" è·³è½¬è‡³ä¸‹æ–¹çš„å­çª—å£
 nnoremap <Leader>jw <C-w>j
 
-" ¶¨Òå¿ì½İ¼üÔÚ½á¶Ô·ûÖ®¼äÌø×ª
+" å®šä¹‰å¿«æ·é”®åœ¨ç»“å¯¹ç¬¦ä¹‹é—´è·³è½¬
 nmap <Leader>M %
 
-" ÈÃÅäÖÃ±ä¸üÁ¢¼´ÉúĞ§
+" è®©é…ç½®å˜æ›´ç«‹å³ç”Ÿæ•ˆ
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
-" ¿ªÆôÊµÊ±ËÑË÷¹¦ÄÜ
+" å¼€å¯å®æ—¶æœç´¢åŠŸèƒ½
 set incsearch
 
-" ËÑË÷Ê±´óĞ¡Ğ´²»Ãô¸Ğ
+" æœç´¢æ—¶å¤§å°å†™ä¸æ•æ„Ÿ
 set ignorecase
 
-" ¹Ø±Õ¼æÈİÄ£Ê½
+" å…³é—­å…¼å®¹æ¨¡å¼
 set nocompatible
 
-" vim ×ÔÉíÃüÁîĞĞÄ£Ê½ÖÇÄÜ²¹È«
+" vim è‡ªèº«å‘½ä»¤è¡Œæ¨¡å¼æ™ºèƒ½è¡¥å…¨
 set wildmenu
 
-" ÅäÉ«·½°¸
+" é…è‰²æ–¹æ¡ˆ
 set background=dark
 colorscheme solarized
 " colorscheme molokai
 " colorscheme phd
 
-" ½ûÖ¹¹â±êÉÁË¸
+" ç¦æ­¢å…‰æ ‡é—ªçƒ
 set gcr=a:block-blinkon0
 
-" ½ûÖ¹ÏÔÊ¾¹ö¶¯Ìõ
+" ç¦æ­¢æ˜¾ç¤ºæ»šåŠ¨æ¡
 set guioptions-=l
 set guioptions-=L
 set guioptions-=r
 set guioptions-=R
 
-" ½ûÖ¹ÏÔÊ¾²Ëµ¥ºÍ¹¤¾ßÌõ
+" ç¦æ­¢æ˜¾ç¤ºèœå•å’Œå·¥å…·æ¡
 set guioptions-=m
 set guioptions-=T
 
-" ×ÜÊÇÏÔÊ¾×´Ì¬À¸
+" æ€»æ˜¯æ˜¾ç¤ºçŠ¶æ€æ 
 set laststatus=2
 
-" ÏÔÊ¾¹â±êµ±Ç°Î»ÖÃ
+" æ˜¾ç¤ºå…‰æ ‡å½“å‰ä½ç½®
 set ruler
 
-" ¿ªÆôĞĞºÅÏÔÊ¾
+" å¼€å¯è¡Œå·æ˜¾ç¤º
 set number
 
-" ¸ßÁÁÏÔÊ¾µ±Ç°ĞĞ/ÁĞ
+" é«˜äº®æ˜¾ç¤ºå½“å‰è¡Œ/åˆ—
 set cursorline
 set cursorcolumn
 
-" ¸ßÁÁÏÔÊ¾ËÑË÷½á¹û
+" é«˜äº®æ˜¾ç¤ºæœç´¢ç»“æœ
 set hlsearch
 
-" ½ûÖ¹ÕÛĞĞ
+" ç¦æ­¢æŠ˜è¡Œ
 set nowrap
 
 
 
-" ¿ªÆôÓï·¨¸ßÁÁ¹¦ÄÜ
+" å¼€å¯è¯­æ³•é«˜äº®åŠŸèƒ½
 syntax enable
 
-" ÔÊĞíÓÃÖ¸¶¨ÓïÑÔ¸ßÁÁÅäÉ«·½°¸Ìæ»»Ä¬ÈÏ·½°¸
+" å…è®¸ç”¨æŒ‡å®šè¯­è¨€é«˜äº®é…è‰²æ–¹æ¡ˆæ›¿æ¢é»˜è®¤æ–¹æ¡ˆ
 syntax on
 
-" ×ÔÊÊÓ¦²»Í¬ÓïÑÔµÄÖÇÄÜËõ½ø
+" è‡ªé€‚åº”ä¸åŒè¯­è¨€çš„æ™ºèƒ½ç¼©è¿›
 filetype indent on
 
-" ½«ÖÆ±í·ûÀ©Õ¹Îª¿Õ¸ñ
+" å°†åˆ¶è¡¨ç¬¦æ‰©å±•ä¸ºç©ºæ ¼
 set expandtab
 
-" ÉèÖÃ±à¼­Ê±ÖÆ±í·ûÕ¼ÓÃ¿Õ¸ñÊı
+" è®¾ç½®ç¼–è¾‘æ—¶åˆ¶è¡¨ç¬¦å ç”¨ç©ºæ ¼æ•°
 set tabstop=4
 
-" ÉèÖÃ¸ñÊ½»¯Ê±ÖÆ±í·ûÕ¼ÓÃ¿Õ¸ñÊı
+" è®¾ç½®æ ¼å¼åŒ–æ—¶åˆ¶è¡¨ç¬¦å ç”¨ç©ºæ ¼æ•°
 set shiftwidth=4
 
-" ÈÃ vim °ÑÁ¬ĞøÊıÁ¿µÄ¿Õ¸ñÊÓÎªÒ»¸öÖÆ±í·û
+" è®© vim æŠŠè¿ç»­æ•°é‡çš„ç©ºæ ¼è§†ä¸ºä¸€ä¸ªåˆ¶è¡¨ç¬¦
 set softtabstop=4
 
 if has("gui_running")
@@ -169,15 +169,15 @@ if has("gui_running")
 
     set fileencodings=ucs_bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
-    " ½â¾ö console Êä³öÂÒÂë
+    " è§£å†³ console è¾“å‡ºä¹±ç 
     language message zh_CN.UTF-8
 
-    " ½â¾ö²Ëµ¥ÂÒÂë
+    " è§£å†³èœå•ä¹±ç 
     source $VIMRUNTIME/delmenu.vim
     if has("win32")
         source $VIMRUNTIME/mswin.vim
     endif
     source $VIMRUNTIME/menu.vim
 endif
-" ÉèÖÃ×´Ì¬À¸Ö÷Ìâ·ç¸ñ
+" è®¾ç½®çŠ¶æ€æ ä¸»é¢˜é£æ ¼
 let g:Powerline_colorscheme='solarized256'
